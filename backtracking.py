@@ -94,6 +94,7 @@ def neighbors_parse(neighbors,vars=[]):
         for B in Aneighbors.split():
             dict[A].append(B)
             dict[B].append(A)
+    print(dict)
     return dict
 
 def MapColoringCSP(colors,neighbors):
