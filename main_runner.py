@@ -38,6 +38,11 @@ for m in range(len(graph1)):
             solution[selected_city1]=color
         except:
             sys.exit("Something went wrong. Perhaps there is not enough color for this map")
+#for cities wih no neighbours
+for city, neighbours in graph1.items():
+        if len(neighbours) == 0:
+            print(city[0])
+            solution[city[0]]='Any Colour'
 t_final=time()-t1
 print("Solution of Forward Checking is: ",solution)
 print("Time: ",t_final)
@@ -72,6 +77,11 @@ for m in range(len(graph)):
         solution[selected_city]=color
     except IndexError:
         sys.exit("Something went wrong. Perhaps there is not enough color for this map")
+#for cities wih no neighbours
+for city, neighbours in graph.items():
+        if len(neighbours) == 0:
+            print(city[0])
+            solution[city[0]]='Any Colour'
 t_final=time()-t1
 print("Solution of Minimun Remaining Values is: ",solution)
 print("Time: ",t_final)
