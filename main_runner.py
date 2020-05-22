@@ -41,7 +41,7 @@ for m in range(len(graph1)):
 #for cities wih no neighbours
 for city, neighbours in graph1.items():
         if len(neighbours) == 0:
-            print(city[0])
+            #print(city[0])
             solution[city[0]]='Any Colour'
 t_final=time()-t1
 print("Solution of Forward Checking is: ",solution)
@@ -80,7 +80,7 @@ for m in range(len(graph)):
 #for cities wih no neighbours
 for city, neighbours in graph.items():
         if len(neighbours) == 0:
-            print(city[0])
+            #print(city[0])
             solution[city[0]]='Any Colour'
 t_final=time()-t1
 print("Solution of Minimun Remaining Values is: ",solution)
